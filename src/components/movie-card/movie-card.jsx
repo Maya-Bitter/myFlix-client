@@ -1,3 +1,3 @@
 export const BookCard = ({ movie }) => {
-    return <div>{movie.Title}</div>;
+    return <div>{movie.title}</div>;
   };
