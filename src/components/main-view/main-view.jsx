@@ -49,7 +49,7 @@ return (
     {movies.map((movie) => (
       <MovieCard
         key={movie.id}
-        book={movie}
+        movie={movie}
         onMovieClick={(newSelectedMovie) => {
           setSelectedMovie(newSelectedMovie);
         }}
