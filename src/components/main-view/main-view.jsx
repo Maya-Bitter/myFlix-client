@@ -36,14 +36,14 @@ if (selectedMovie) {
 return <MovieView Movie={selectedMovie} />;
 }
 
-if (Movie.length === 0) {
-return <div>The list is empty!</div>;
-}
+if (movies.length === 0) {
+    return <div>The list is empty!</div>;
+  }
 return (
 <div>
 {movies.map((movie) => (
 <MovieCard
-    key={Movie.id}
+    key={movie.id}
     movie={movie}
     onClick={() => {
     setSelectedMovie(movie);
