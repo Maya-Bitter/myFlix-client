@@ -27161,61 +27161,62 @@ const MainView = ()=>{
         {
             id: 1,
             title: "Silence of the Lambs",
+            image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
             description: "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
             genre: "Thriller",
-            director: "Jonathan Demme",
-            image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+            director: "Jonathan Demme"
         },
         {
             id: 2,
             title: "Luther: The Fallen Sun",
+            image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xsW7M4b4gawgFKCzcXHL2MSeswj.jpg",
             description: "A dark psychological crime drama starring Idris Elba as Luther, a man struggling with his own terrible demons, who might be as dangerous as the depraved murderers he hunts.",
             genre: "Thriller",
-            director: "Jamie Payne",
-            image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xsW7M4b4gawgFKCzcXHL2MSeswj.jpg"
+            director: "Jamie Payne"
         },
         {
             id: 3,
             title: "Plane",
+            image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qi9r5xBgcc9KTxlOLjssEbDgO0J.jpg",
             description: "A burger-loving hit man, his philosophical partner, a drug-addled gangste's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
             genre: "Action",
-            director: "Jean-Francois Richet",
-            image: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qi9r5xBgcc9KTxlOLjssEbDgO0J.jpg"
+            director: "Jean-Francois Richet"
         }
     ]);
     const [selectedMovie, setSelectedMovie] = (0, _react.useState)(null);
     if (selectedMovie) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieView.MovieView), {
-        Movie: selectedMovie
+        movie: selectedMovie,
+        onBackClick: ()=>setSelectedMovie(null)
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 36,
-        columnNumber: 8
+        lineNumber: 39,
+        columnNumber: 5
     }, undefined);
     if (movies.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "The list is empty!"
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 40,
-        columnNumber: 12
+        lineNumber: 44,
+        columnNumber: 10
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: movies.map((movie)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieCard.MovieCard), {
-                movie: movie,
-                onClick: ()=>{
-                    setSelectedMovie(movie);
+                book: movie,
+                onMovieClick: (newSelectedMovie)=>{
+                    setSelectedMovie(newSelectedMovie);
                 }
             }, movie.id, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 45,
-                columnNumber: 1
+                lineNumber: 50,
+                columnNumber: 7
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 43,
-        columnNumber: 1
+        lineNumber: 48,
+        columnNumber: 3
     }, undefined);
 };
-_s(MainView, "CDXz5e2LcYmQZR3tOODjA/G5/A0=");
+_s(MainView, "95J3GRyfzF6XeVEjc5++GWLvGjE=");
 _c = MainView;
 var _c;
 $RefreshReg$(_c, "MainView");
