@@ -14,11 +14,12 @@ fetch("https://m-flix.herokuapp.com/movies")
   const moviesFromApi = movies.map((movie) => {
     return {
       id: movie._id,
-      title: movie.title,
-      description: movie.description,
-      image: movie.imageUrl,
-      director: movie.director.Name?.[0]
-    };
+      title: movie.Title, 
+      genre: movie.Genre.Name,
+      description: movie.Description,
+      image: movie.Image,
+      director: movie.Director.Name?.[0],
+      };
   });
 
   setMovies(moviesFromApi);
@@ -36,16 +37,16 @@ if (movies.length === 0) {
 }
 
 return (
-  <div>
-    {movies.map((movie) => (
-      <MovieCard
-        key={movie.id}
-        movie={movie}
-        onMovieClick={(newSelectedMovie) => {
-          setSelectedMovie(newSelectedMovie);
-        }}
-        />
-      ))}
-    </div>
-  );
+<div>
+{movies.map((movie) => (
+<MovieCard
+  key={movie.id}
+  movie={movie}
+  onMovieClick={(newSelectedMovie) => {
+    setSelectedMovie(newSelectedMovie);
+  }}
+  />
+))}
+</div>
+);
 };
