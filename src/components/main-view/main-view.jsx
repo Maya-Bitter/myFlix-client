@@ -14,11 +14,11 @@ fetch("https://m-flix.herokuapp.com/movies")
   const moviesFromApi = movies.map((movie) => {
     return {
       id: movie._id,
-      title: movie.Title, 
-      genre: movie.Genre.Name,
-      description: movie.Description,
-      image: movie.Image,
-      director: movie.Director.Name?.[0],
+      title: movie.title, 
+      genre: movie.genre,
+      description: movie.description,
+      image: movie.image,
+      director: movie.director.name?.[0],
       };
   });
 
