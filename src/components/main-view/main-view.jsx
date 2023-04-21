@@ -33,29 +33,58 @@ if (!user) {
 }
 
 if (selectedMovie) {
-  return (
-    <MovieView movie={selectedMovie} onBackClick={() => setSelectedMovie(null)} />
-  );
+return (
+<>
+<button
+  onClick={() => {
+    setUser(null);
+  }}
+>
+  Logout
+</button>
+
+<MovieView movie={selectedMovie} onBackClick={() => setSelectedMovie(null)} />
+</>
+);
 }
 
 if (movies.length === 0) {
-  return <div>The list is empty!</div>;
+return (
+  <>
+  <button
+    onClick={() => {
+      setUser(null);
+    }}
+  >
+    Logout
+  </button>
+
+<div>The list is empty!</div>
+</>
+  );
 }
 
 return (
 <div>
+<button
+onClick={() => {
+  setUser(null);
+}}
+>
+Logout
+</button>
+
 {movies.map((movie) => (
 <MovieCard
-  key={movie.id}
-  movie={movie}
-  onMovieClick={(newSelectedMovie) => {
-    setSelectedMovie(newSelectedMovie);
-  }}
-  />
+key={movie.id}
+movie={movie}
+onMovieClick={(newSelectedMovie) => {
+setSelectedMovie(newSelectedMovie);
+}}
+/>
 ))}
 </div>
 );
 };
 
-<button onClick={() => { setUser(null); }}>Logout</button>
 
