@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const LoginView = ({ onLoggedIn }) => {
-onst [username, setUsername] = useState("");
+const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 
 const handleSubmit = (event) => {
