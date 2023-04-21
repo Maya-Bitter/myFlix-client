@@ -18,7 +18,7 @@
     </div>
     <div>
         <span>Director: </span>
-        <span>{movie.director}</span>
+        <span>{movie.director.name}</span>
         </div>
     <button onClick={onBackClick}>Back</button>
     </div>
