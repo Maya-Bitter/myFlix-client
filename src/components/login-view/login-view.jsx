@@ -33,6 +33,7 @@ if (data.user) {
 alert("Something went wrong");
 });
 
+};
 return (
 <form onSubmit={handleSubmit}>
 <label>
@@ -56,4 +57,4 @@ required />
 <button type="submit">Submit</button>
 </form>
 );
-}}; 
+};
