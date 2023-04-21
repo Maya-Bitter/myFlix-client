@@ -56,3 +56,6 @@ return (
 </div>
 );
 };
+
+<button onClick={() => { setUser(null); }}>Logout</button>
+
