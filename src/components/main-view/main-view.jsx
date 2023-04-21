@@ -40,12 +40,15 @@ const moviesFromApi = movies.map((movie) => {
 
 if (!user) {
 return (
+<>
 <LoginView
   onLoggedIn={(user, token) => {
     setUser(user);
     setToken(token);
   }}
 />
+<SignupView />
+</>
 );
 }
 
