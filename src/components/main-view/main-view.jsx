@@ -7,8 +7,8 @@ import { SignupView } from "../signup-view/signup-view";
 
 export const MainView = () => {
 const [movies, setMovies] = useState([]);
-
 const [selectedMovie, setSelectedMovie] = useState(null);
+const [user, setUser] = useState(null);
 
 useEffect(() => {
 fetch("https://m-flix.herokuapp.com/movies")
@@ -28,6 +28,10 @@ fetch("https://m-flix.herokuapp.com/movies")
   setMovies(moviesFromApi);
 });
 }, []);
+
+if (!user) {
+  return <LoginView />;
+}
 
 if (selectedMovie) {
   return (
