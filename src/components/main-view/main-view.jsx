@@ -47,6 +47,7 @@ return (
     setToken(token);
   }}
 />
+or
 <SignupView />
 </>
 );
