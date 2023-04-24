@@ -99,8 +99,7 @@ or
 if (user) {
   localStorage.setItem("user", JSON.stringify(user));
   localStorage.setItem("token", token);
-  onLoggedIn(user, token);
-} else {
+  } else {
   alert("No such user");
 }
 
