@@ -41,6 +41,46 @@ const moviesFromApi = movies.map((movie) => {
 
  // rest of the code
 
+ //new code//
+
+ //return (
+ // <Row className="justify-content-md-center">
+ // {!user ? (
+ //   <Col md={5}>
+ // <LoginView
+ // onLoggedIn={(user, token) => {
+ //   setUser(user);
+ //   setToken(token);
+ // }}
+// />
+// <SignupView />
+// </Col>
+
+// ) : selectedMovie ? (
+// <Col md={8} style={{ border: "1px solid black" }}>
+//<MovieView 
+//movie={selectedMovie} 
+// onBackClick={() => setSelectedMovie(null)} 
+//  <Button variant="danger" onClick  ={() => {setUser(null); setToken(null); localStorage.clear(); }}>Logout</Button>
+// </Col>
+//movies.length === 0) ? (The list is empty!)
+// <>
+// {movies.map((movie) => (
+//<MovieCard
+//key={movie.id}
+//movie={movie}
+//onMovieClick={(newSelectedMovie) => {
+//setSelectedMovie(newSelectedMovie);
+//}}
+//</>
+// </Col>
+// <Button variant="danger" onClick={() => {setUser(null);}}>Logout</Button>
+// </>
+//)}
+//</Row>
+//);
+//};
+
 if (!user) {
 return (
 <>

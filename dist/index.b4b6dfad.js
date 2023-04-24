@@ -27201,6 +27201,43 @@ const MainView = ()=>{
         token
     ]);
     // rest of the code
+    //new code//
+    //return (
+    // <Row className="justify-content-md-center">
+    // {!user ? (
+    //   <Col md={5}>
+    // <LoginView
+    // onLoggedIn={(user, token) => {
+    //   setUser(user);
+    //   setToken(token);
+    // }}
+    // />
+    // <SignupView />
+    // </Col>
+    // ) : selectedMovie ? (
+    // <Col md={8} style={{ border: "1px solid black" }}>
+    //<MovieView 
+    //movie={selectedMovie} 
+    // onBackClick={() => setSelectedMovie(null)} 
+    //  <Button variant="danger" onClick  ={() => {setUser(null); setToken(null); localStorage.clear(); }}>Logout</Button>
+    // </Col>
+    //movies.length === 0) ? (The list is empty!)
+    // <>
+    // {movies.map((movie) => (
+    //<MovieCard
+    //key={movie.id}
+    //movie={movie}
+    //onMovieClick={(newSelectedMovie) => {
+    //setSelectedMovie(newSelectedMovie);
+    //}}
+    //</>
+    // </Col>
+    // <Button variant="danger" onClick={() => {setUser(null);}}>Logout</Button>
+    // </>
+    //)}
+    //</Row>
+    //);
+    //};
     if (!user) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginViewJsx.LoginView), {
@@ -27210,13 +27247,13 @@ const MainView = ()=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 47,
+                lineNumber: 87,
                 columnNumber: 1
             }, undefined),
             "or",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupView.SignupView), {}, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 54,
+                lineNumber: 94,
                 columnNumber: 1
             }, undefined)
         ]
@@ -27235,7 +27272,7 @@ const MainView = ()=>{
                 children: "Logout"
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 70,
+                lineNumber: 110,
                 columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieView.MovieView), {
@@ -27243,7 +27280,7 @@ const MainView = ()=>{
                 onBackClick: ()=>setSelectedMovie(null)
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 78,
+                lineNumber: 118,
                 columnNumber: 1
             }, undefined)
         ]
@@ -27257,14 +27294,14 @@ const MainView = ()=>{
                 children: "Logout"
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 86,
+                lineNumber: 126,
                 columnNumber: 3
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "The list is empty!"
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 94,
+                lineNumber: 134,
                 columnNumber: 1
             }, undefined)
         ]
@@ -27278,7 +27315,7 @@ const MainView = ()=>{
                 children: "Logout"
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 101,
+                lineNumber: 141,
                 columnNumber: 1
             }, undefined),
             movies.map((movie)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieCard.MovieCard), {
@@ -27288,13 +27325,13 @@ const MainView = ()=>{
                     }
                 }, movie.id, false, {
                     fileName: "src/components/main-view/main-view.jsx",
-                    lineNumber: 110,
+                    lineNumber: 150,
                     columnNumber: 1
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 100,
+        lineNumber: 140,
         columnNumber: 1
     }, undefined);
 };
