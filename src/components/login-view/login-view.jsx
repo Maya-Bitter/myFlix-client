@@ -12,8 +12,8 @@ const handleSubmit = (event) => {
 event.preventDefault();
 
 const data = {
-username: username,
-password: password
+Username: username,
+Password: password
 };
 
 fetch("https://m-flix.herokuapp.com/login", {
