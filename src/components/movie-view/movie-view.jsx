@@ -22,7 +22,9 @@ return (
 <span>Director: </span>
 <span>{movie.director.name}</span>
 </div>
-<button onClick={onBackClick}>Back</button>
+<button onClick={onBackClick} className="back-button">
+Back
+</button>
 </div>
 );
 };
