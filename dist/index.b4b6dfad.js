@@ -27159,7 +27159,6 @@ var _signupView = require("../signup-view/signup-view");
 var _s = $RefreshSig$();
 const MainView = ()=>{
     _s();
-<<<<<<< HEAD
     const storedUser = JSON.parse(localStorage.getItem("user"));
     const storedToken = localStorage.getItem("token");
     const [user, setUser] = (0, _react.useState)(storedUser ? storedUser : null);
@@ -27173,12 +27172,6 @@ const MainView = ()=>{
                 Authorization: `Bearer ${token}`
             }
         }).then((response)=>response.json()).then((movies)=>{
-=======
-    const [movies, setMovies] = (0, _react.useState)([]);
-    const [selectedMovie, setSelectedMovie] = (0, _react.useState)(null);
-    (0, _react.useEffect)(()=>{
-        fetch("https://m-flix.herokuapp.com/movies").then((response)=>response.json()).then((movies)=>{
->>>>>>> 74e221b5522c296117aa49597efbf8e55d356c8e
             const moviesFromApi = movies.map((movie)=>{
                 return {
                     id: movie._id,
@@ -27189,7 +27182,6 @@ const MainView = ()=>{
                     director: movie.Director.Name?.[0]
                 };
             });
-<<<<<<< HEAD
             setMovies(movies);
         });
     }, [
@@ -27202,35 +27194,9 @@ const MainView = ()=>{
                 onLoggedIn: (user, token)=>{
                     setUser(user);
                     setToken(token);
-=======
-            setMovies(moviesFromApi);
-        });
-    }, []);
-    if (selectedMovie) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieView.MovieView), {
-        movie: selectedMovie,
-        onBackClick: ()=>setSelectedMovie(null)
-    }, void 0, false, {
-        fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 31,
-        columnNumber: 5
-    }, undefined);
-    if (movies.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "The list is empty!"
-    }, void 0, false, {
-        fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 36,
-        columnNumber: 10
-    }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: movies.map((movie)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieCard.MovieCard), {
-                movie: movie,
-                onMovieClick: (newSelectedMovie)=>{
-                    setSelectedMovie(newSelectedMovie);
->>>>>>> 74e221b5522c296117aa49597efbf8e55d356c8e
                 }
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-<<<<<<< HEAD
                 lineNumber: 44,
                 columnNumber: 1
             }, undefined),
@@ -27320,18 +27286,6 @@ const MainView = ()=>{
     }, undefined);
 };
 _s(MainView, "skShail9kO25ilQX788tJ78Yq3c=");
-=======
-                lineNumber: 42,
-                columnNumber: 1
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 40,
-        columnNumber: 1
-    }, undefined);
-};
-_s(MainView, "PO+XgOji7E32nFJj3H5UPLPJ7w4=");
->>>>>>> 74e221b5522c296117aa49597efbf8e55d356c8e
 _c = MainView;
 var _c;
 $RefreshReg$(_c, "MainView");
@@ -27341,7 +27295,7 @@ $RefreshReg$(_c, "MainView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","@parcel/transformer-js/src/esmodule-helpers.js":"59maP","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fJCxc","../login-view/login-view.jsx":"9YtA0","../signup-view/signup-view":"4OGiN"}],"bwuIu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","../login-view/login-view.jsx":"9YtA0","../signup-view/signup-view":"4OGiN","@parcel/transformer-js/src/esmodule-helpers.js":"59maP","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fJCxc"}],"bwuIu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$67b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
