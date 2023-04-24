@@ -11,7 +11,7 @@ import "./index.scss";
 const App = () => {
 return (
 <Container>      
-<MainView />;
+<MainView />
 </Container>
 );
 };
