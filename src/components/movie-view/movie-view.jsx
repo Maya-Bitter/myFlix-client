@@ -22,7 +22,8 @@ return (
 <span>Director: </span>
 <span>{movie.director.name}</span>
 </div>
-<button onClick={onBackClick} className="back-button">
+<button onClick={onBackClick} className="back-button"
+style={{ cursor: "pointer" }}>
 Back
 </button>
 </div>
