@@ -20,7 +20,7 @@ return (
 </div>
 <div>
 <span>Director: </span>
-<span>{movie.director.Name}</span>
+<span>{movie.director.name}</span>
 </div>
 <button onClick={onBackClick} className="back-button"
 style={{ cursor: "pointer" }}>
