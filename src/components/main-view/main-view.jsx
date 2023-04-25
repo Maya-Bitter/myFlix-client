@@ -33,7 +33,7 @@ const moviesFromApi = movies.map((movie) => {
     director: movie.Director.Name?.[0],
     };
 });
-  setMovies(movies);
+  setMovies(moviesFromApi);
 
 });
 }, [token]);

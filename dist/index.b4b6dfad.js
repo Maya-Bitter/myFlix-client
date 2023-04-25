@@ -27199,7 +27199,7 @@ const MainView = ()=>{
                     director: movie.Director.Name?.[0]
                 };
             });
-            setMovies(movies);
+            setMovies(moviesFromApi);
         });
     }, [
         token
