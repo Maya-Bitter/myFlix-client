@@ -27250,7 +27250,7 @@ const MainView = ()=>{
                     columnNumber: 3
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                    variant: "danger",
+                    variant: "dark",
                     onClick: ()=>{
                         setUser(null);
                         setToken(null);
@@ -27293,8 +27293,7 @@ const MainView = ()=>{
                         columnNumber: 3
                     }, undefined)),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                    variant: "danger",
-                    size: "sm",
+                    variant: "dark",
                     onClick: ()=>{
                         setUser(null);
                     },

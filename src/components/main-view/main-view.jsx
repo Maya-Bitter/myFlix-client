@@ -57,7 +57,7 @@ or
 movie={selectedMovie} 
  onBackClick={() => setSelectedMovie(null)} 
  />
-<Button variant="danger" onClick  ={() => {setUser(null); setToken(null); localStorage.clear(); }}>Logout</Button>
+<Button variant="dark" onClick  ={() => {setUser(null); setToken(null); localStorage.clear(); }}>Logout</Button>
  </Col>
 
 ) : movies.length === 0 ? (
@@ -76,7 +76,7 @@ setSelectedMovie(newSelectedMovie);
 />
  </Col>
   ))}
- <Button variant="danger" size="sm" onClick={() => {setUser(null);}}>Logout</Button>
+ <Button variant="dark" onClick={() => {setUser(null);}}>Logout</Button>
  </>
 )}
 </Row>
