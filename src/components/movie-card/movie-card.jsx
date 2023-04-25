@@ -8,7 +8,7 @@ import { Button, Card } from "react-bootstrap";
 export const MovieCard = ({ movie, onMovieClick }) => {
 return (
 
-<card>
+<Card>
 <Card.Img variant="top" scr={movie.image} />
 <Card.Body>
 <Card.Title>{movie.title}</Card.Title>
@@ -17,7 +17,7 @@ return (
 open
 </Button>
 </Card.Body>
-</card>
+</Card>
 
   );
 };
