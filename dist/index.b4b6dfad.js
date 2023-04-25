@@ -41250,29 +41250,7 @@ const LoginView = ({ onLoggedIn  })=>{
         lineNumber: 41,
         columnNumber: 1
     }, undefined);
-}; // old code //
- //return (
- //<form onSubmit={handleSubmit}>
- //<label>
- //Username:
- //<input
- //type="text"
- //value={username}
- //onChange={(e) => setUsername(e.target.value)}
- //required
- //minLength="3"
- ///>
- //</label>
- //<label>
- //Password:
- //<input
- //type="password"
- //value={password}
- //onChange={(e) => setPassword(e.target.value)}
- //required />
- //</label>
- //<button type="submit">Submit</button>
- // </form>}
+};
 _s(LoginView, "Lrw7JeD9zj6OUWhT/IH4OIvPKEk=");
 _c = LoginView;
 var _c;
