@@ -41178,42 +41178,21 @@ const LoginView = ({ onLoggedIn  })=>{
         }).catch((e)=>{
             alert("Something went wrong");
         });
-    // new code //
-    // return (
-    //  <Form onSubmit={handleSubmit}>
-    //  <Form.Group controlId="formUsername">
-    //    <Form.Label>Username:</Form.Label>
-    //    <Form.Control
-    //      type="text"
-    //      value={username}
-    //      onChange={(e) => setUsername(e.target.value)}
-    //      required
-    //      minLength="3"
-    //    />
-    //  </Form.Group>
-    //  <Form.Group controlId="formPassword">
-    //    <Form.Label>Password:</Form.Label>
-    //    <Form.Control
-    //      type="password"
-    //      value={password}
-    //      onChange={(e) => setPassword(e.target.value)}
-    //      required
-    //    />
-    //  </Form.Group>
-    //  <Button variant="primary" type="submit">
-    //    Submit
-    //  </Button>
-    //</Form>
-    //);
-    //};
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default), {
         onSubmit: handleSubmit,
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default).Group, {
+                controlId: "formUsername",
                 children: [
-                    "Username:",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default).Label, {
+                        children: "Username:"
+                    }, void 0, false, {
+                        fileName: "src/components/login-view/login-view.jsx",
+                        lineNumber: 43,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default).Control, {
                         type: "text",
                         value: username,
                         onChange: (e)=>setUsername(e.target.value),
@@ -41221,49 +41200,79 @@ const LoginView = ({ onLoggedIn  })=>{
                         minLength: "3"
                     }, void 0, false, {
                         fileName: "src/components/login-view/login-view.jsx",
-                        lineNumber: 75,
+                        lineNumber: 44,
                         columnNumber: 1
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/login-view/login-view.jsx",
-                lineNumber: 73,
+                lineNumber: 42,
                 columnNumber: 1
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default).Group, {
+                controlId: "formPassword",
                 children: [
-                    "Password:",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default).Label, {
+                        children: "Password:"
+                    }, void 0, false, {
+                        fileName: "src/components/login-view/login-view.jsx",
+                        lineNumber: 54,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default).Control, {
                         type: "password",
                         value: password,
                         onChange: (e)=>setPassword(e.target.value),
                         required: true
                     }, void 0, false, {
                         fileName: "src/components/login-view/login-view.jsx",
-                        lineNumber: 85,
+                        lineNumber: 55,
                         columnNumber: 1
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/login-view/login-view.jsx",
-                lineNumber: 83,
+                lineNumber: 53,
                 columnNumber: 1
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                variant: "primary",
                 type: "submit",
                 children: "Submit"
             }, void 0, false, {
                 fileName: "src/components/login-view/login-view.jsx",
-                lineNumber: 91,
+                lineNumber: 62,
                 columnNumber: 1
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/login-view/login-view.jsx",
-        lineNumber: 72,
+        lineNumber: 41,
         columnNumber: 1
     }, undefined);
-};
+}; // old code //
+ //return (
+ //<form onSubmit={handleSubmit}>
+ //<label>
+ //Username:
+ //<input
+ //type="text"
+ //value={username}
+ //onChange={(e) => setUsername(e.target.value)}
+ //required
+ //minLength="3"
+ ///>
+ //</label>
+ //<label>
+ //Password:
+ //<input
+ //type="password"
+ //value={password}
+ //onChange={(e) => setPassword(e.target.value)}
+ //required />
+ //</label>
+ //<button type="submit">Submit</button>
+ // </form>}
 _s(LoginView, "Lrw7JeD9zj6OUWhT/IH4OIvPKEk=");
 _c = LoginView;
 var _c;
