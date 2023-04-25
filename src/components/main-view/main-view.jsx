@@ -76,7 +76,7 @@ setSelectedMovie(newSelectedMovie);
 />
  </Col>
   ))}
- <Button variant="danger" onClick={() => {setUser(null);}}>Logout</Button>
+ <Button variant="danger" size="sm" onClick={() => {setUser(null);}}>Logout</Button>
  </>
 )}
 </Row>

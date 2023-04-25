@@ -27294,6 +27294,7 @@ const MainView = ()=>{
                     }, undefined)),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
                     variant: "danger",
+                    size: "sm",
                     onClick: ()=>{
                         setUser(null);
                     },
