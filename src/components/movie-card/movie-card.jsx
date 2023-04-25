@@ -1,4 +1,4 @@
-// import React from "react"; (not sure if it should be here???)
+import React from "react"
 
 // Here you import the PropTypes library
 import PropTypes from "prop-types";
