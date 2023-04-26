@@ -59,7 +59,7 @@ value={password}
 onChange={(e) => setPassword(e.target.value)}
 required
 minLength="8"
-placeholder="select password"
+placeholder="Password"
 />
 
 </Form.Group>
@@ -70,7 +70,7 @@ type="email"
   value={email}
 onChange={(e) => setEmail(e.target.value)}
   required
-  placeholder="Enter your email"
+  placeholder="Enter email"
 
 />
 </Form.Group>

@@ -41182,7 +41182,7 @@ const LoginView = ({ onLoggedIn  })=>{
                         onChange: (e)=>setUsername(e.target.value),
                         required: true,
                         minLength: "3",
-                        placeholder: "Enter your username"
+                        placeholder: "Enter username"
                     }, void 0, false, {
                         fileName: "src/components/login-view/login-view.jsx",
                         lineNumber: 44,
@@ -41210,7 +41210,7 @@ const LoginView = ({ onLoggedIn  })=>{
                         onChange: (e)=>setPassword(e.target.value),
                         required: true,
                         minLength: "8",
-                        placeholder: "Enter your password"
+                        placeholder: "Password"
                     }, void 0, false, {
                         fileName: "src/components/login-view/login-view.jsx",
                         lineNumber: 56,
@@ -41339,7 +41339,7 @@ const SignupView = ()=>{
                         onChange: (e)=>setPassword(e.target.value),
                         required: true,
                         minLength: "8",
-                        placeholder: "select password"
+                        placeholder: "Password"
                     }, void 0, false, {
                         fileName: "src/components/signup-view/signup-view.jsx",
                         lineNumber: 56,
@@ -41366,7 +41366,7 @@ const SignupView = ()=>{
                         value: email,
                         onChange: (e)=>setEmail(e.target.value),
                         required: true,
-                        placeholder: "Enter your email"
+                        placeholder: "Enter email"
                     }, void 0, false, {
                         fileName: "src/components/signup-view/signup-view.jsx",
                         lineNumber: 68,
