@@ -14,7 +14,7 @@ return (
 <Card.Title>{movie.title}</Card.Title>
 <Card.Text>{movie.description}</Card.Text>
 <Button onClick={() => onMovieClick(movie)} variant="outline-primary">
-open
+more information
 </Button>
 </Card.Body>
 </Card>
