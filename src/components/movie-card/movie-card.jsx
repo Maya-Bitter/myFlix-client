@@ -10,6 +10,8 @@ return (
 
 <Card className="h-100">
 <Card.Img variant="top" scr={movie.image} />
+<Card className="text-center">
+<Card.Header>Featured</Card.Header></Card>
 <Card.Body>
 <Card.Title>{movie.title}</Card.Title>
 <Card.Text>{movie.description}</Card.Text>
