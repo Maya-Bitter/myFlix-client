@@ -46,6 +46,7 @@ return (
 {!user ? (
 <>
 <Col md={5}>
+Login 
 <LoginView onLoggedIn={(user, token) => 
 { setUser(user); 
 setToken(token)
@@ -53,7 +54,7 @@ LocalStorage.setItem("user", JSON.strinify(user));
 LocalStorage.setItem("token", token);
 }} 
 />
-or
+or signup
 <SignupView />
   </Col>
    </>
