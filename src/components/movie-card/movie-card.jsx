@@ -5,13 +5,11 @@ import PropTypes from "prop-types";
 import { Button, Card } from "react-bootstrap";
 
 // The MovieCard function component 
-export const MovieCard = ({ movie }) => {
+export const MovieCard = ({ movie, onMovieClick}) => {
 return (
 
 <Card className="h-100">
-<Card.Img variant="top" scr={movie.image} /> 
-<Card className="text-center">
-<Card.Header>Featured</Card.Header></Card>
+<Card.Img variant="top" scr={movie.image}/> 
 <Card.Body>
 <Card.Title>{movie.title}</Card.Title>
 <Card.Text>{movie.description}</Card.Text>
