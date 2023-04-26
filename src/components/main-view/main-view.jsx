@@ -30,8 +30,8 @@ const moviesFromApi = movies.map((movie) => {
     title: movie.Title, 
     genre: movie.Genre.Name,
     description: movie.Description,
-    image: movie.Image,
-    director: movie.Director.Name?.[0],
+    image: movie.ImagePath,
+    director: movie.Director?.Name,
     };
 });
   setMovies(moviesFromApi);
@@ -46,7 +46,13 @@ return (
 {!user ? (
 <>
 <Col md={5}>
-<LoginView onLoggedIn={(user, token) => { setUser(user); setToken(token)}} />
+<LoginView onLoggedIn={(user, token) => 
+{ setUser(user); 
+setToken(token)
+LocalStorage.setItem("user", JSONS.strinify(user));
+LocalStorage.setItem("token", token);
+}} 
+/>
 or
 <SignupView />
   </Col>
