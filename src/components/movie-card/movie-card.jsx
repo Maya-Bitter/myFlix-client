@@ -9,7 +9,7 @@ export const MovieCard = ({ movie, onMovieClick }) => {
 return (
 
 <Card className="h-100">
-<Card.Img variant="top" scr={movie.image} />
+<Card.Img variant="top" scr={movie.image} /> 
 <Card className="text-center">
 <Card.Header>Featured</Card.Header></Card>
 <Card.Body>
