@@ -58,6 +58,7 @@ type="password"
 value={password}
 onChange={(e) => setPassword(e.target.value)}
 required
+minLength="8"
 placeholder="Enter your password"
 />
 </Form.Group>
