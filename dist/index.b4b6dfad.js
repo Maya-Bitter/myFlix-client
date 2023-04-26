@@ -27371,7 +27371,7 @@ const MovieCard = ({ movie , onMovieClick  })=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
                         onClick: ()=>onMovieClick(movie),
-                        variant: "link",
+                        variant: "outline-primary",
                         children: "open"
                     }, void 0, false, {
                         fileName: "src/components/movie-card/movie-card.jsx",

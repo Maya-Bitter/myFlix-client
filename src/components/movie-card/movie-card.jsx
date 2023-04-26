@@ -13,7 +13,7 @@ return (
 <Card.Body>
 <Card.Title>{movie.title}</Card.Title>
 <Card.Text>{movie.description}</Card.Text>
-<Button onClick={() => onMovieClick(movie)} variant="link">
+<Button onClick={() => onMovieClick(movie)} variant="outline-primary">
 open
 </Button>
 </Card.Body>
