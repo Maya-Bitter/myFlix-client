@@ -1,5 +1,3 @@
-import "./movie-view.scss";
-
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import "./movie-view.scss";
@@ -13,7 +11,8 @@ const movie = movies.find((m) => m.id === movieId);
 return (
 <div>
 <div>
-<img src={movie.image} />
+<img className="w-100" src={movie.image} />
+
 </div>
 <div>
 <span>Title: </span>
