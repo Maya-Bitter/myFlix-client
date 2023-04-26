@@ -58,8 +58,10 @@ type="password"
 value={password}
 onChange={(e) => setPassword(e.target.value)}
 required
+minLength="8"
 placeholder="select password"
 />
+
 </Form.Group>
 <Form.Group controlId="signUpFormEmail">
 <Form.Label>Email:</Form.Label>
