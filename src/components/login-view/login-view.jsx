@@ -47,6 +47,7 @@ value={username}
 onChange={(e) => setUsername(e.target.value)}
 required
 minLength="3"
+placeholder="Enter your username"
 />
 </Form.Group>
 
@@ -57,6 +58,7 @@ type="password"
 value={password}
 onChange={(e) => setPassword(e.target.value)}
 required
+placeholder="Enter your password"
 />
 </Form.Group>
 <Button variant="primary" type="submit">
