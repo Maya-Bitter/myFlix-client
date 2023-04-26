@@ -27217,7 +27217,7 @@ const MainView = ()=>{
                         onLoggedIn: (user, token)=>{
                             setUser(user);
                             setToken(token);
-                            LocalStorage.setItem("user", JSONS.strinify(user));
+                            LocalStorage.setItem("user", JSON.strinify(user));
                             LocalStorage.setItem("token", token);
                         }
                     }, void 0, false, {
