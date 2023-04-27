@@ -4,6 +4,7 @@ import { MovieView } from "../movie-view/movie-view";
 import { LoginView } from "../login-view/login-view.jsx";
 import { SignupView } from "../signup-view/signup-view";
 import { NavigationBar } from "../navigation-bar/navigation-bar";
+import { ProfileView } from "../profile-view/profile-view";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import { Button } from "react-bootstrap";
@@ -57,84 +58,95 @@ const onLoggedOut = () => {
   localStorage.clear();
 }
 
-  return (
-    <BrowserRouter>
-      <NavigationBar user={user} onLoggedOut={onLoggedOut}/>
-      <Row className="justify-content-md-center">
-        <Routes>
-          <Route
-          path="/signup"
-          element={
-          <>
-          {user ? (
-          <Navigate to="/" />
-          ) : (
-          <Col md={5}>
-            <SignupView />
-          </Col>
-          )}
-          </>
+return (
+  <BrowserRouter>
+    <NavigationBar user={user} onLoggedOut={onLoggedOut}/>
+    <Row className="justify-content-md-center">
+      <Routes>
+        <Route
+        path="/signup"
+        element={
+        <>
+        {user ? (
+        <Navigate to="/" />
+        ) : (
+        <Col md={5}>
+          <SignupView />
+        </Col>
+        )}
+        </>
 
-          }
-          />
+        }
+        />
 
-          <Route
-          path="/login"
-          element={
-          <>
-          {user ? (
-          <Navigate to="/" />
-          ) : (
-          <Col md={5}>
-            <LoginView onLoggedIn={onLoggedIn} />
-          </Col>
-          )}
-          </>
+        <Route
+        path="/login"
+        element={
+        <>
+        {user ? (
+        <Navigate to="/" />
+        ) : (
+        <Col md={5}>
+          <LoginView onLoggedIn={onLoggedIn} />
+        </Col>
+        )}
+        </>
 
-          }
-          />
+        }
+        />
 
-          <Route
-          path="/movies/:movieId"
-          element={
-          <>
-          {!user ? (
-          <Navigate to="/login" replace />
-          ) : movies.length === 0 ? (
-          <Col>The list is empty!</Col>
-          ) : (
-          <Col md={8}>
-            <MovieView movies={movies} />
-          </Col>
-          )}
-          </>
-          }
-          />
+        <Route
+        path="/profile"
+        element={
+        !user ? (
+        <Navigate to="/login" replace />
+        ) : (
+        <ProfileView user={user} />
+        )
+        }
+        />
 
-          <Route
-          path="/"
-          element={
-          <>
-          {!user ? (
-          <Navigate to="/login" replace />
-          ) : movies.length === 0 ? (
-          <Col>The list is empty!</Col>
-          ) : (
-          <>
-            {movies.map((movie) => (
-              <Col className="mb-4" key={movie.id} md={3}>
-                <MovieCard movie={movie} />
-              </Col>
-            ))}
-          </>
-          )}
-          </>
-          }
-          />
-          
-        </Routes>
-      </Row>
-    </BrowserRouter>
-  );
+        <Route
+        path="/movies/:movieId"
+        element={
+        <>
+        {!user ? (
+        <Navigate to="/login" replace />
+        ) : movies.length === 0 ? (
+        <Col>The list is empty!</Col>
+        ) : (
+        <Col md={8}>
+          <MovieView movies={movies} />
+        </Col>
+        )}
+        </>
+        }
+        />
+
+        <Route
+        path="/"
+        element={
+        <>
+        {!user ? (
+        <Navigate to="/login" replace />
+        ) : movies.length === 0 ? (
+        <Col>The list is empty!</Col>
+        ) : (
+        <>
+          {movies.map((movie) => (
+            <Col className="mb-4" key={movie.id} md={3}>
+              <MovieCard movie={movie} />
+            </Col>
+          ))}
+        </>
+        )}
+        </>
+        }
+        />
+        
+      </Routes>
+    </Row>
+  </BrowserRouter>
+);
 };
 
