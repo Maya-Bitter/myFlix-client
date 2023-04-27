@@ -7,17 +7,18 @@ import { Link } from "react-router-dom";
 
 // The MovieCard function component 
 export const MovieCard = ({ movie }) => {
-return (
-<Card className="h-100">
-<Card.Img variant="top" src={movie.image} />
-<Card.Body>
-<Card.Title>{movie.title}</Card.Title>
-<Card.Text>{movie.description}</Card.Text>
-<Link to={`/movies/${encodeURIComponent(movie.id)}`} />
-<Button variant="link">open</Button>
-</Card.Body>
-</Card>
-);
+  return (
+    <Card className="h-100">
+    <Card.Img variant="top" src={movie.image} />
+    <Card.Body>
+    <Card.Title>{movie.title}</Card.Title>
+    <Card.Text>{movie.description}</Card.Text>
+    <Link to={`/movies/${encodeURIComponent(movie.id)}`} >
+      <Button variant="link">open</Button>
+    </Link>
+    </Card.Body>
+    </Card>
+  );
 };
 
 // Here is where we define all the props constraints for the MovieCard
