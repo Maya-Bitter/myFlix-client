@@ -3,21 +3,21 @@ import React from "react"
 // Here you import the PropTypes library
 import PropTypes from "prop-types";
 import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 // The MovieCard function component 
-export const MovieCard = ({ movie, onMovieClick}) => {
-return (
-
-<Card className="h-100">
-<Card.Img variant="top" src={movie.image} />
-<Card.Body>
-<Card.Title>{movie.title}</Card.Title>
-<Card.Text>{movie.description}</Card.Text>
-<Button onClick={() => onMovieClick(movie)} variant="outline-primary">
-more information
-</Button>
-</Card.Body>
-</Card>
+export const MovieCard = ({ movie }) => {
+  return (
+    <Card className="h-100">
+    <Card.Img variant="top" src={movie.image} />
+    <Card.Body>
+    <Card.Title>{movie.title}</Card.Title>
+    <Card.Text>{movie.description}</Card.Text>
+    <Link to={`/movies/${encodeURIComponent(movie.id)}`} >
+      <Button variant="link">open</Button>
+    </Link>
+    </Card.Body>
+    </Card>
   );
 };
 
