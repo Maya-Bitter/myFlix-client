@@ -94,14 +94,16 @@ return (
         <Route
         path="/profile"
         element={
-        !user ? (
+          <>
+        {!user ? (
         <Navigate to="/login" replace />
         ) : (
         <ProfileView user={user} />
-        )
+        )}
+        </>
         }
         />
-
+        
         <Route
         path="/movies/:movieId"
         element={
