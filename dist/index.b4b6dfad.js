@@ -46760,67 +46760,38 @@ $parcel$ReactRefreshHelpers$3c12.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ProfileView", ()=>ProfileView);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _s = $RefreshSig$();
-const ProfileView = ()=>{
-    _s();
-    const [users, setUsers] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        fetch("https://m-flix.herokuapp.com/users").then((response)=>response.json()).then((data)=>{
-            console.log(data);
-            setUsers(data);
-        }).catch((err)=>{
-            console.log(err.message);
-        });
-    }, []);
+const ProfileView = ({ user  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "user-container",
-        children: users.map((user)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "post-card",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        className: "post-title",
-                        children: user.password
-                    }, void 0, false, {
-                        fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 22,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "post-body",
-                        children: user.email
-                    }, void 0, false, {
-                        fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "post-body",
-                        children: user.birthday
-                    }, void 0, false, {
-                        fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 24,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, user.Username, true, {
+        class: "container-fluid",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "Username",
+                children: user.Username
+            }, void 0, false, {
                 fileName: "src/components/profile-view/profile-view.jsx",
-                lineNumber: 21,
-                columnNumber: 14
-            }, undefined);
-        })
-    }, void 0, false, {
+                lineNumber: 6,
+                columnNumber: 1
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "Password",
+                children: user.Email
+            }, void 0, false, {
+                fileName: "src/components/profile-view/profile-view.jsx",
+                lineNumber: 7,
+                columnNumber: 1
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/profile-view/profile-view.jsx",
-        lineNumber: 18,
-        columnNumber: 5
+        lineNumber: 5,
+        columnNumber: 1
     }, undefined);
 };
-_s(ProfileView, "JadZszbqna06PpJs9hMo7Hl/LOY=");
 _c = ProfileView;
-exports.default = ProfileView;
 var _c;
 $RefreshReg$(_c, "ProfileView");
 
