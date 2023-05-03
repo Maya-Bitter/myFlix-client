@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const ProfileView = () => {
-   const [user, setUsers] = useState([]);
+   const [users, setUsers] = useState([]);
    useEffect(() => {
       fetch('https://m-flix.herokuapp.com/users')
          .then((response) => response.json())

@@ -46766,7 +46766,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
 const ProfileView = ()=>{
     _s();
-    const [user, setUsers] = (0, _react.useState)([]);
+    const [users, setUsers] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         fetch("https://m-flix.herokuapp.com/users").then((response)=>response.json()).then((data)=>{
             console.log(data);
@@ -46818,7 +46818,7 @@ const ProfileView = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(ProfileView, "irP9UgpaPj5drbfFVTpMZky2tYU=");
+_s(ProfileView, "JadZszbqna06PpJs9hMo7Hl/LOY=");
 _c = ProfileView;
 exports.default = ProfileView;
 var _c;
