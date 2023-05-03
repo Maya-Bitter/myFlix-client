@@ -46769,11 +46769,18 @@ const ProfileView = ({ user  })=>{
         class: "container-fluid",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Welcome to myFlix"
+            }, void 0, false, {
+                fileName: "src/components/profile-view/profile-view.jsx",
+                lineNumber: 6,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "Username",
                 children: user.Username
             }, void 0, false, {
                 fileName: "src/components/profile-view/profile-view.jsx",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -46781,7 +46788,7 @@ const ProfileView = ({ user  })=>{
                 children: user.Email
             }, void 0, false, {
                 fileName: "src/components/profile-view/profile-view.jsx",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 1
             }, undefined)
         ]
