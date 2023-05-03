@@ -20,8 +20,8 @@ const ProfileView = () => {
           return (
              <div className="post-card" key={user.id}>
                 <h2 className="post-title">{user.password}</h2>
-                <p className="post-body">{post.email}</p>
-                <p className="post-body">{post.birthday}</p>
+                <p className="post-body">{user.email}</p>
+                <p className="post-body">{user.birthday}</p>
             </div>
           );
        })}

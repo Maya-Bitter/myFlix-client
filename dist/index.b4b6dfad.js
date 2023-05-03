@@ -46791,7 +46791,7 @@ const ProfileView = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "post-body",
-                        children: post.email
+                        children: user.email
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
                         lineNumber: 23,
@@ -46799,7 +46799,7 @@ const ProfileView = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "post-body",
-                        children: post.birthday
+                        children: user.birthday
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
                         lineNumber: 24,
