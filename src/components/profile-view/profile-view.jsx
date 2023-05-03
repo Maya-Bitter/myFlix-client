@@ -16,9 +16,9 @@ const ProfileView = () => {
 
    return (
     <div className="user-container">
-       {users.map((post) => {
+       {users.map((user) => {
           return (
-             <div className="post-card" key={user.id}>
+             <div className="post-card" key={user.Username}>
                 <h2 className="post-title">{user.password}</h2>
                 <p className="post-body">{user.email}</p>
                 <p className="post-body">{user.birthday}</p>

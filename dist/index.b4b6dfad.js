@@ -46777,7 +46777,7 @@ const ProfileView = ()=>{
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "user-container",
-        children: users.map((post)=>{
+        children: users.map((user)=>{
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "post-card",
                 children: [
@@ -46806,7 +46806,7 @@ const ProfileView = ()=>{
                         columnNumber: 17
                     }, undefined)
                 ]
-            }, user.id, true, {
+            }, user.Username, true, {
                 fileName: "src/components/profile-view/profile-view.jsx",
                 lineNumber: 21,
                 columnNumber: 14
