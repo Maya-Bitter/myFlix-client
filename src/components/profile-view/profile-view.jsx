@@ -16,17 +16,13 @@ const ProfileView = () => {
 
    return (
     <div className="user-container">
-       {posts.map((post) => {
+       {users.map((post) => {
           return (
              <div className="post-card" key={user.id}>
                 <h2 className="post-title">{user.password}</h2>
                 <p className="post-body">{post.email}</p>
                 <p className="post-body">{post.birthday}</p>
-
-                <div className="button">
-                <div className="delete-btn">Delete</div>
-                </div>
-             </div>
+            </div>
           );
        })}
     </div>
