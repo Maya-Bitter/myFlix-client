@@ -34,9 +34,7 @@ export const SignupView = () => {
     });
   };
 
-  
-
- return (
+   return (
   <Form onSubmit={handleSubmit}>
    <Form.Group controlId="signUpFormUsername">
  <Form.Label>Username:</Form.Label>
