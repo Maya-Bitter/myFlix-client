@@ -20,3 +20,109 @@ return (
    
 )}; 
 
+const updateUser = () => {
+
+   const [username, setUsername] = useState("");
+   const [password, setPassword] = useState("");
+   const [email, setEmail] = useState("");
+   const [birthday, setBirthday] = useState("");
+ 
+   const handleSubmit = (event) => {
+     event.preventDefault();
+ 
+     const data = {
+       Username: username,
+       Password: password,
+       Email: email,
+       Birthday: birthday
+     };
+ 
+     fetch("https://m-flix.herokuapp.com/users${username}", {// { /users/:Username ??? //
+       method: "PUT",
+       body: JSON.stringify(data),
+       headers: {
+         "Content-Type": "application/json"
+       }
+     }).then((response) => {
+       if (response.ok) {
+         alert("Update successful");
+         window.location.reload();
+       } else {
+         alert("Update failed");
+       }
+     });
+   };
+ 
+    return (
+   <Form onSubmit={handleSubmit}>
+    <Form.Group controlId="updateFormUsername">
+  <Form.Label>Username:</Form.Label>
+     <Form.Control
+  type="text"
+  value={username}
+    onChange={(e) => setUsername(e.target.value)}
+  required
+     minLength="3"
+     placeholder="Update your username"
+ 
+     />
+ </Form.Group>
+ 
+ <Form.Group controlId="updateFormPassword">
+ <Form.Label>Password:</Form.Label>
+ <Form.Control
+ type="password"
+ value={password}
+ onChange={(e) => setPassword(e.target.value)}
+ required
+ minLength="8"
+ placeholder="Update Password"
+ />
+ 
+ </Form.Group>
+ <Form.Group controlId="updateFormEmail">
+ <Form.Label>Email:</Form.Label>
+ <Form.Control
+ type="email"
+   value={email}
+ onChange={(e) => setEmail(e.target.value)}
+   required
+   placeholder="Update email"
+ 
+ />
+ </Form.Group>
+ <Form.Group controlId="updateFormBirthday">
+ <Form.Label>Birthday:</Form.Label>
+ <Form.Control
+   type="date"
+   value={birthday}
+   onChange={(e) => setBirthday(e.target.value)}
+   required
+ />
+ </Form.Group>
+ <Button variant="primary" type="submit">
+ Update
+ </Button>
+ </Form>
+ );
+ };
+ 
+const deletetUser = () => {
+
+  fetch("https://m-flix.herokuapp.com/users${username}", { // { /users/:Username ??? //
+  method: "DELETE",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-Type": "application/json"
+  }
+}).then((response) => {
+  if (response.ok) {
+    alert("Your account has been deleted");
+    window.location.reload();
+  } else {
+    alert("Could not delete your account");
+  }
+});
+};
+
+// needs to add return form // 
