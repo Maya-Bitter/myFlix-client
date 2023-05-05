@@ -27407,7 +27407,17 @@ const MovieCard = ({ movie  })=>{
                         fileName: "src/components/movie-card/movie-card.jsx",
                         lineNumber: 16,
                         columnNumber: 5
-                    }, undefined)
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
+                        variant: "success",
+                        size: "sm",
+                        children: "Add to favorites"
+                    }, void 0, false, {
+                        fileName: "src/components/movie-card/movie-card.jsx",
+                        lineNumber: 19,
+                        columnNumber: 5
+                    }, undefined),
+                    " "
                 ]
             }, void 0, true, {
                 fileName: "src/components/movie-card/movie-card.jsx",
