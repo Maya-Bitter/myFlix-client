@@ -16,14 +16,16 @@ const token = localStorage.getItem('token');
 
 fetch("https://m-flix.herokuapp.com/users/${user.Username}", { 
 method: "DELETE",
-headers: { Authorization: `Bearer ${token}` }
-}).then((response) => {
+headers: {
+  "Content-Type": "application/json", 
+  Authorization: `Bearer ${token}`,},
+ }).then((response) => {
 if (response.ok) {
 alert("Your account has been deleted");
 LocalStorage.clear();
 window.location.reload();
 } else {
-alert("Could not delete your account");
+alert("Could not delete your account"); // the code doesnt work for delete account // 
 }
 });
 };
@@ -43,16 +45,16 @@ fetch("https://m-flix.herokuapp.com/users/${user.Username}", {
 method: "PUT",
 body: JSON.stringify(data),
 headers: {
-Authorization: `Bearer ${token}` }
-}).then((response) => {
+  "Content-Type": "application/json", 
+  Authorization: `Bearer ${token}`,},
+ }).then((response) => {
   if (response.ok) {
     alert("Update successful");
     LocalStorage.clear();
     window.location.reload();
   } else {
-    alert("Update failed");
-  }
-});
+    alert("Update failed");  // the code doesnt update or delete // 
+  }});
 };
 
 return (
