@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { MovieCard } from "../movie-card/movie-card";
 
 export const ProfileView = ({ user }) => {
 const [username, setUsername] = useState("");
@@ -13,6 +14,8 @@ const [birthday, setBirthday] = useState("");
 
 const deletetUser = () => {
 const token = localStorage.getItem('token');
+
+let favoriteMovies = movies.filter(m => user.FavoriteMovies.includes(m._id))
 
 fetch("https://m-flix.herokuapp.com/users/${user.Username}", { 
 method: "DELETE",
