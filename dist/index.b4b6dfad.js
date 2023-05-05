@@ -46997,13 +46997,13 @@ const ProfileView = ({ user  })=>{
                         lineNumber: 118,
                         columnNumber: 2
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        class: "btn btn-primary",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                        variant: "outline-danger",
                         onClick: deletetUser,
-                        children: "Delete"
+                        children: "Delete account"
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 122,
+                        lineNumber: 119,
                         columnNumber: 2
                     }, undefined)
                 ]

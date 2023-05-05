@@ -115,11 +115,8 @@ return (
    required
  />
  </Form.Group>
- <Button variant="primary" type="submit">
- Update
- </Button>
-
- <a class ="btn btn-primary" onClick={deletetUser}>Delete</a>
+ <Button variant="primary" type="submit">Update</Button>
+ <Button variant="outline-danger" onClick={deletetUser}>Delete account</Button>
  </Form>
  </div> 
 );
