@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import { Card } from "react-bootstrap";
 import "./movie-view.scss";
 
 export const MovieView = ({ movies }) => {
@@ -9,7 +10,9 @@ const { movieId } = useParams();
 const movie = movies.find((m) => m.id === movieId);
 
 return (
+
 <div>
+<Card style={{ width: '50rem' }}>
 <div>
 <img className="w-100" src={movie.image} />
 </div>
@@ -32,6 +35,7 @@ return (
 <Link to={`/`}>
 <button className="back-button">Back</button>
 </Link>
+</Card>
 </div>
 );
 };
