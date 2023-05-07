@@ -65,7 +65,7 @@ return (
 
 <br />
 
-   <Card style={{ width: '18rem' }}>
+<Card border="primary" style={{ width: '20rem' }}>
    <Card.Header>Your information</Card.Header>
    <ListGroup variant="flush">
    <ListGroup.Item>Name: {user.Username}</ListGroup.Item>
@@ -74,6 +74,8 @@ return (
    </Card>
 
    <br />
+
+   <Card border="primary" style={{ width: '40rem' }}>
       
   <Form onSubmit={handleSubmit}>
   <Form.Group controlId="updateFormUsername">
@@ -124,6 +126,7 @@ return (
  <Button variant="primary" type="submit">Update</Button>
  <Button variant="outline-danger" onClick={deletetUser}>Delete account</Button>
  </Form>
+ </Card>
  </div> 
 );
 };
