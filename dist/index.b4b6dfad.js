@@ -46758,7 +46758,7 @@ const NavigationBar = ({ user , onLoggedOut  })=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Navbar).Brand, {
                     as: (0, _reactRouterDom.Link),
                     to: "/",
-                    children: "MyFlix App"
+                    children: "MyFlix"
                 }, void 0, false, {
                     fileName: "src/components/navigation-bar/navigation-bar.jsx",
                     lineNumber: 8,
@@ -46992,7 +46992,7 @@ const ProfileView = ({ user  })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardDefault.default), {
                 border: "primary",
                 style: {
-                    width: "40rem"
+                    width: "30rem"
                 },
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formDefault.default), {
                     onSubmit: handleSubmit,

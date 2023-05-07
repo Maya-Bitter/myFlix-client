@@ -77,7 +77,7 @@ return (
 
    <br />
 
-   <Card border="primary" style={{ width: '40rem' }}>
+   <Card border="primary" style={{ width: '30rem' }}>
       
   <Form onSubmit={handleSubmit}>
   <Form.Group controlId="updateFormUsername">
