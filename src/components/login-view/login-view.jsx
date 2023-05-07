@@ -39,9 +39,10 @@ alert("Something went wrong");
 };
 return (
   <Card>
+    <div class="text-center">
 <Card.Header><Card.Title>Welcome to myFlix</Card.Title></Card.Header>
 <Card.Header><Card.Title>Login</Card.Title></Card.Header>
-
+</div>
 <Form onSubmit={handleSubmit}>
 <Form.Group controlId="formUsername">
 <Form.Label>Username:</Form.Label>

@@ -37,10 +37,12 @@ export const SignupView = () => {
   };
 
    return (
+    
 <Card>
+<div class="text-center">
 <Card.Header><Card.Title>Welcome to myFlix</Card.Title></Card.Header>
 <Card.Header><Card.Title>Sign up</Card.Title></Card.Header>
-
+</div>
 <Form onSubmit={handleSubmit}>
 <Form.Group controlId="signUpFormUsername">
 <Form.Label>Username:</Form.Label>

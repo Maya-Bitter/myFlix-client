@@ -63,14 +63,17 @@ headers: {
 return (
   <div>
 
+<br />
+
    <Card style={{ width: '18rem' }}>
-   <Card.Header>Welcome to myFlix</Card.Header>
+   <Card.Header>Your information</Card.Header>
    <ListGroup variant="flush">
-   <ListGroup.Item>Your information</ListGroup.Item>
    <ListGroup.Item>Name: {user.Username}</ListGroup.Item>
    <ListGroup.Item>Email: {user.Email}</ListGroup.Item>
    </ListGroup>
    </Card>
+
+   <br />
       
   <Form onSubmit={handleSubmit}>
   <Form.Group controlId="updateFormUsername">
