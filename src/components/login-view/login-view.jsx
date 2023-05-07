@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Card from 'react-bootstrap/Card';
 
 export const LoginView = ({ onLoggedIn }) => {
 const [username, setUsername] = useState("");
@@ -37,6 +38,9 @@ alert("Something went wrong");
 
 };
 return (
+
+<Card>
+<Card.Body>Welcome to myFlix</Card.Body>
 <Form onSubmit={handleSubmit}>
 <Form.Group controlId="formUsername">
 <Form.Label>Username:</Form.Label>
@@ -65,5 +69,6 @@ placeholder="Password"
 Submit
 </Button>
 </Form>
+</Card>
 );
 };

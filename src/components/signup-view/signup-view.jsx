@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Card from 'react-bootstrap/Card';
+
 
 export const SignupView = () => {
   const [username, setUsername] = useState("");
@@ -35,6 +37,8 @@ export const SignupView = () => {
   };
 
    return (
+<Card>
+<Card.Body>Welcome to myFlix</Card.Body>
   <Form onSubmit={handleSubmit}>
    <Form.Group controlId="signUpFormUsername">
  <Form.Label>Username:</Form.Label>
@@ -85,6 +89,7 @@ onChange={(e) => setEmail(e.target.value)}
 Submit
 </Button>
 </Form>
+</Card>
 );
 };
 
