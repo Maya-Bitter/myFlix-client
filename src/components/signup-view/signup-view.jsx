@@ -38,19 +38,21 @@ export const SignupView = () => {
 
    return (
 <Card>
-<Card.Body>Welcome to myFlix</Card.Body>
-  <Form onSubmit={handleSubmit}>
-   <Form.Group controlId="signUpFormUsername">
- <Form.Label>Username:</Form.Label>
-    <Form.Control
- type="text"
- value={username}
-   onChange={(e) => setUsername(e.target.value)}
- required
-    minLength="3"
-    placeholder="select your username"
+<Card.Header><Card.Title>Welcome to myFlix</Card.Title></Card.Header>
+<Card.Header><Card.Title>Sign up</Card.Title></Card.Header>
 
-    />
+<Form onSubmit={handleSubmit}>
+<Form.Group controlId="signUpFormUsername">
+<Form.Label>Username:</Form.Label>
+<Form.Control
+type="text"
+value={username}
+onChange={(e) => setUsername(e.target.value)}
+required
+minLength="3"
+placeholder="select your username"
+
+/>
 </Form.Group>
 
 <Form.Group controlId="signUpFormPassword">
