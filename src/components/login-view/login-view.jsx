@@ -38,9 +38,10 @@ alert("Something went wrong");
 
 };
 return (
+  <Card>
+<Card.Header><Card.Title>Welcome to myFlix</Card.Title></Card.Header>
+<Card.Header><Card.Title>Login</Card.Title></Card.Header>
 
-<Card>
-<Card.Body>Welcome to myFlix</Card.Body>
 <Form onSubmit={handleSubmit}>
 <Form.Group controlId="formUsername">
 <Form.Label>Username:</Form.Label>
