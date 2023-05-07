@@ -66,7 +66,9 @@ return (
 <br />
 
 <Card border="primary" style={{ width: '20rem' }}>
+<div class="text-center">
    <Card.Header>Your information</Card.Header>
+   </div>
    <ListGroup variant="flush">
    <ListGroup.Item>Name: {user.Username}</ListGroup.Item>
    <ListGroup.Item>Email: {user.Email}</ListGroup.Item>
