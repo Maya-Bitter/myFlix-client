@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import { Row } from 'react-bootstrap';
 import { Col } from "react-bootstrap/Col";
@@ -15,7 +14,7 @@ const [password, setPassword] = useState("");
 const [email, setEmail] = useState(user.Email);
 const [birthday, setBirthday] = useState(user.Birthday);
 
-let favoriteMovies = movies.filter(movie => user.favoriteMovies.includes(movie.id)
+let favoriteMovies = movies.filter((movie) => user.favoriteMovies.includes(movie.id)
 
 ); 
 
@@ -54,15 +53,23 @@ method: "PUT",
 body: JSON.stringify(data),
 headers: {
   "Content-Type": "application/json", 
-  Authorization: `Bearer ${token}`,},
- }).then((response) => {
-  if (response.ok) {
+  Authorization: `Bearer ${token}`,
+},
+
+ })
+ .then((response) => response.json())
+  then((data) => {
+    if (data) {
     alert("Update successful");
-    localStorage.clear();
+    updateUser(data);
     window.location.reload();
   } else {
-    alert("Update failed");  
-  }});
+    alert("Update failed"); 
+  }
+})
+.catch((e) => {
+  alert("Something went wrong");
+});
 };
 
 return (
@@ -137,7 +144,7 @@ return (
 
  <Row>
 <Col md={12}>
-<h3 className="mt-3 mb-3 text-light">Favorite Movies</h3>
+<h3 className="mt-3 mb-3 text-light">Favorite Movies:</h3>
 </Col>
 
 {favoriteMovies.map((movie) => (

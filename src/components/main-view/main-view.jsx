@@ -56,7 +56,7 @@ const onLoggedOut = () => {
 
 const updateUser = (user) => {
   console.log("updateUser", user);
-  localStorage.setItem("user", JSON.stringify(user));
+  localStorage.setItem("user", JSON.stringify(user)); 
 
 };
 
@@ -139,7 +139,10 @@ return (
         <>
           {movies.map((movie) => (
             <Col className="mb-4" key={movie.id} md={3}>
-              <MovieCard movie={movie} user={user} />
+              <MovieCard movie={movie} 
+              user={user}
+              updateUser={updateUser}
+               />
             </Col>
           ))}
         </>
