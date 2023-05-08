@@ -52,7 +52,13 @@ const onLoggedOut = () => {
   setUser(null);
   setToken(null);
   localStorage.clear();
-}
+};
+
+const updateUser = (user) => {
+  console.log("updateUser", user);
+  localStorage.setItem("user", JSON.stringify(user));
+
+};
 
 return (
   <BrowserRouter>

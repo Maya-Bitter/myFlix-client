@@ -6,7 +6,7 @@ import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // The MovieCard function component 
-export const MovieCard = ({ movie, user }) => {
+export const MovieCard = ({ movie, user, updateUser }) => {
 
   const isFav = user.FavoriteMovies.includes(movie.id);
   const token = localStorage.getItem("token");
@@ -28,7 +28,8 @@ export const MovieCard = ({ movie, user }) => {
         if (user) {
             alert("Successfully added to favorites");
             //setIsFavorite(true);
-            //updateUser(user);
+           updateUser(user);
+           window.location.reload();
         }
     })
     .catch(e => {
@@ -53,7 +54,8 @@ export const MovieCard = ({ movie, user }) => {
         if (user) {
             alert("Successfully removed from favorites");
             //setIsFavorite(true);
-            //updateUser(user);
+          updateUser(user);
+          window.location.reload();
         }
     })
     .catch(e => {
