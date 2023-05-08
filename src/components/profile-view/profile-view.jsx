@@ -13,7 +13,7 @@ const [password, setPassword] = useState("");
 const [email, setEmail] = useState(user.Email);
 const [birthday, setBirthday] = useState(user.Birthday);
 
-//let favoriteMovies = movies.filter(m => user.FavoriteMovies.includes(m._id))
+// let favoriteMovies = movies.filter(movie => user.favoriteMovies.includes(movie.id)); // 
 
 const deletetUser = () => {
   const token = localStorage.getItem('token');

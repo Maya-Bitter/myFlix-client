@@ -46932,7 +46932,7 @@ const ProfileView = ({ user  })=>{
     const [password, setPassword] = (0, _react.useState)("");
     const [email, setEmail] = (0, _react.useState)(user.Email);
     const [birthday, setBirthday] = (0, _react.useState)(user.Birthday);
-    //let favoriteMovies = movies.filter(m => user.FavoriteMovies.includes(m._id))
+    // let favoriteMovies = movies.filter(movie => user.favoriteMovies.includes(movie.id)); // 
     const deletetUser = ()=>{
         const token = localStorage.getItem("token");
         fetch(`https://m-flix.herokuapp.com/users/${user.Username}`, {
