@@ -32,7 +32,7 @@ export const MovieCard = ({ movie, user, updateUser }) => {
            window.location.reload();
         }
     })
-    .catch(e => {
+    .catch((e) => {
         alert(e);
     });
   }
@@ -52,16 +52,17 @@ export const MovieCard = ({ movie, user, updateUser }) => {
     })
     .then(user => {
         if (user) {
+          console.log("User", user)
             alert("Successfully removed from favorites");
             //setIsFavorite(true);
           updateUser(user);
           window.location.reload();
         }
     })
-    .catch(e => {
+    .catch((e) => {
         alert(e);
     });
-  }
+  };
 
   return (
     <Card className="h-100">
