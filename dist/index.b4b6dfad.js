@@ -46946,7 +46946,7 @@ const ProfileView = ({ user  })=>{
                 alert("Your account has been deleted");
                 localStorage.clear();
                 window.location.reload();
-            } else alert("Could not delete your account"); // the code doesnt work for delete account // 
+            } else alert("Could not delete your account");
         });
     };
     const handleSubmit = (event)=>{
@@ -46970,7 +46970,7 @@ const ProfileView = ({ user  })=>{
                 alert("Update successful");
                 localStorage.clear();
                 window.location.reload();
-            } else alert("Update failed"); // the code doesnt update or delete // 
+            } else alert("Update failed");
         });
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {

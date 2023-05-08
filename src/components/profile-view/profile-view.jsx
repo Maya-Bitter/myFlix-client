@@ -29,7 +29,7 @@ const deletetUser = () => {
   localStorage.clear();
   window.location.reload();
   } else {
-  alert("Could not delete your account"); // the code doesnt work for delete account // 
+  alert("Could not delete your account");  
   }
   });
 };
@@ -57,7 +57,7 @@ headers: {
     localStorage.clear();
     window.location.reload();
   } else {
-    alert("Update failed");  // the code doesnt update or delete // 
+    alert("Update failed");  
   }});
 };
 
