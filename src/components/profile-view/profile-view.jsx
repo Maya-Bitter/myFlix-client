@@ -5,32 +5,33 @@ import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { MovieCard } from "../movie-card/movie-card";
+import moment from 'moment/moment';
 
 export const ProfileView = ({ user }) => {
-const [username, setUsername] = useState("");
+const [username, setUsername] = useState(user.Username);
 const [password, setPassword] = useState("");
-const [email, setEmail] = useState("");
-const [birthday, setBirthday] = useState("");
+const [email, setEmail] = useState(user.Email);
+const [birthday, setBirthday] = useState(user.Birthday);
+
+//let favoriteMovies = movies.filter(m => user.FavoriteMovies.includes(m._id))
 
 const deletetUser = () => {
-const token = localStorage.getItem('token');
+  const token = localStorage.getItem('token');
 
-let favoriteMovies = movies.filter(m => user.FavoriteMovies.includes(m._id))
-
-fetch("https://m-flix.herokuapp.com/users/${user.Username}", { 
-method: "DELETE",
-headers: {
-  "Content-Type": "application/json", 
-  Authorization: `Bearer ${token}`,},
- }).then((response) => {
-if (response.ok) {
-alert("Your account has been deleted");
-LocalStorage.clear();
-window.location.reload();
-} else {
-alert("Could not delete your account"); // the code doesnt work for delete account // 
-}
-});
+  fetch(`https://m-flix.herokuapp.com/users/${user.Username}`, { 
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json", 
+    Authorization: `Bearer ${token}`,},
+  }).then((response) => {
+  if (response.ok) {
+  alert("Your account has been deleted");
+  localStorage.clear();
+  window.location.reload();
+  } else {
+  alert("Could not delete your account"); // the code doesnt work for delete account // 
+  }
+  });
 };
 
 const handleSubmit = (event) => {
@@ -44,7 +45,7 @@ Email: email,
 Birthday: birthday,
 };
 
-fetch("https://m-flix.herokuapp.com/users/${user.Username}", {
+fetch(`https://m-flix.herokuapp.com/users/${user.Username}`, {
 method: "PUT",
 body: JSON.stringify(data),
 headers: {
@@ -53,7 +54,7 @@ headers: {
  }).then((response) => {
   if (response.ok) {
     alert("Update successful");
-    LocalStorage.clear();
+    localStorage.clear();
     window.location.reload();
   } else {
     alert("Update failed");  // the code doesnt update or delete // 
@@ -120,7 +121,7 @@ return (
  <Form.Label>Birthday:</Form.Label>
  <Form.Control
    type="date"
-   value={birthday}
+   value={moment(birthday).format("YYYY-MM-DD")}
    onChange={(e) => setBirthday(e.target.value)}
    required
  />
