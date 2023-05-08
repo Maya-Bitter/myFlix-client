@@ -15,7 +15,6 @@ const [email, setEmail] = useState(user.Email);
 const [birthday, setBirthday] = useState(user.Birthday);
 
 let favoriteMovies = movies.filter((movie) => user.favoriteMovies.includes(movie.id)
-
 ); 
 
 const deletetUser = () => {
