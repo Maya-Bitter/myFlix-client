@@ -3,17 +3,21 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
+import { Row } from 'react-bootstrap';
+import { Col } from "react-bootstrap/Col";
 import ListGroup from 'react-bootstrap/ListGroup';
 import { MovieCard } from "../movie-card/movie-card";
 import moment from 'moment/moment';
 
-export const ProfileView = ({ user }) => {
+export const ProfileView = ({ user, movies, updateUser }) => {
 const [username, setUsername] = useState(user.Username);
 const [password, setPassword] = useState("");
 const [email, setEmail] = useState(user.Email);
 const [birthday, setBirthday] = useState(user.Birthday);
 
-// let favoriteMovies = movies.filter(movie => user.favoriteMovies.includes(movie.id)); // 
+let favoriteMovies = movies.filter(movie => user.favoriteMovies.includes(movie.id)
+
+); 
 
 const deletetUser = () => {
   const token = localStorage.getItem('token');
@@ -130,6 +134,18 @@ return (
  <Button variant="outline-danger" onClick={deletetUser}>Delete account</Button>
  </Form>
  </Card>
+
+ <Row>
+<Col md={12}>
+<h3 className="mt-3 mb-3 text-light">Favorite Movies</h3>
+</Col>
+
+{favoriteMovies.map((movie) => (
+  <Col className="mb-4" key={movie.id} xl={2} lg={3} md={4} xs={6}>
+    <MovieCard movie={movie} user={user} updateUser={updateUser} />
+    </Col>
+))}
+ </Row>
  </div> 
 );
 };
