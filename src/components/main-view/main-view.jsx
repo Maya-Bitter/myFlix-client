@@ -104,7 +104,10 @@ return (
         {!user ? (
         <Navigate to="/login" replace />
         ) : (
-        <ProfileView user={user} />
+        <ProfileView user={user}
+        movie={movies}
+        updateUser={updateUser}
+         />
         )}
         </>
         }
