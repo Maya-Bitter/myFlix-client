@@ -26,6 +26,7 @@ export const MovieCard = ({ movie, user, updateUser }) => {
     })
     .then(user => {
         if (user) {
+          console.log("User", user);
             alert("Successfully added to favorites");
             //setIsFavorite(true);
            updateUser(user);
@@ -35,7 +36,7 @@ export const MovieCard = ({ movie, user, updateUser }) => {
     .catch((e) => {
         alert(e);
     });
-  }
+  };
 
   const removeFromFav = () => {
     fetch(`https://m-flix.herokuapp.com/users/${user.Username}/movies/${movie.id}`, {
