@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // The MovieCard function component 
 export const MovieCard = ({ movie, user, updateUser }) => {
 
-  const isFav = user.FavoriteMovies.includes(movie.id);
+  const isFav = user.FavoriteMovies.includes(movie.id); 
   const token = localStorage.getItem("token");
 
   const addToFav = () => {
