@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from 'react-bootstrap/Card';
-import { Row } from 'react-bootstrap';
-import { Col } from "react-bootstrap/Col";
+import Row from 'react-bootstrap';
+import Col from "react-bootstrap/Col";
 import ListGroup from 'react-bootstrap/ListGroup';
 import { MovieCard } from "../movie-card/movie-card";
 import moment from 'moment/moment';
@@ -14,7 +14,8 @@ const [password, setPassword] = useState("");
 const [email, setEmail] = useState(user.Email);
 const [birthday, setBirthday] = useState(user.Birthday);
 
-let favoriteMovies = movies.filter((movie) => user.favoriteMovies.includes(movie.id)
+let favoriteMovies = movies.filter((movie) => 
+user.FavoriteMovies.includes(movie.id)
 ); 
 
 const deletetUser = () => {
