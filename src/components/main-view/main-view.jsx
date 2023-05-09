@@ -97,17 +97,14 @@ return (
         }
         />
 
-        <Route
+      <Route
         path="/profile"
         element={
           <>
         {!user ? (
         <Navigate to="/login" replace />
         ) : (
-        <ProfileView user={user}
-        movie={movies}
-        updateUser={updateUser}
-         />
+        <ProfileView user={user} />
         )}
         </>
         }
