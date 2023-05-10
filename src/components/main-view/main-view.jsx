@@ -105,13 +105,10 @@ return (
         <Navigate to="/login" replace />
         ) : (
         <ProfileView 
-        user={user}
-        
-        // new // 
-        movie={movie} 
-        updateUser={updateUser}
-        //new//
-        
+        user={user}   
+        movies={movies}  // added //
+        updateUser={updateUser} // added //
+               
         />
         )}
         </>

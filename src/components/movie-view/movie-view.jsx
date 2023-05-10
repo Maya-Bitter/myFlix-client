@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import "./movie-view.scss";
+import { propTypes } from "react-bootstrap/esm/Image";
 
 export const MovieView = ({ movies }) => {
 
@@ -37,3 +38,5 @@ return (
     </div>
     );
     };
+
+    // Here is where we define all the props constraints for the MovieCard
