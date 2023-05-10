@@ -46391,13 +46391,27 @@ const MovieView = ({ movies  })=>{
         lineNumber: 14,
         columnNumber: 5
     }, undefined);
-}; // Here is where we define all the props constraints for the MovieCard
+};
 _s(MovieView, "e2L2DPdRH1AShA7yIOCsYRlzvlI=", false, function() {
     return [
         (0, _reactRouter.useParams)
     ];
 });
 _c = MovieView;
+// Here is where we define all the props constraints for the MovieView
+MovieView.propTypes = {
+    movie: PropTypes.shape({
+        director: PropTypes.shape({
+            Name: PropTypes.string.isRequired
+        }).isRequired,
+        genre: PropTypes.shape({
+            Name: PropTypes.string.isRequired
+        }).isRequired,
+        title: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired
+    })
+};
 var _c;
 $RefreshReg$(_c, "MovieView");
 

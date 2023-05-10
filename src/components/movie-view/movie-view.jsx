@@ -39,4 +39,20 @@ return (
     );
     };
 
-    // Here is where we define all the props constraints for the MovieCard
+    // Here is where we define all the props constraints for the MovieView
+
+MovieView.propTypes = {
+    movie: PropTypes.shape({
+    director: PropTypes.shape({
+        Name: PropTypes.string.isRequired,
+    }).isRequired,
+
+    genre: PropTypes.shape({
+    Name: PropTypes.string.isRequired
+    }).isRequired,
+
+    title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+})
+};
