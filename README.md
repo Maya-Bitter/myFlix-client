@@ -2,7 +2,7 @@
 
 App link: https://maya-flix.netlify.app/
 
-Project description:
+Project description & dependencies:
 
 Using React, I built the client-side for a movie app called myFlix based on its existing server-side code (REST API and database) 
 which I built in the previous Achievement: https://github.com/Maya-Bitter/movie_api
