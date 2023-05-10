@@ -7,7 +7,7 @@ Project description & dependencies:
 Using React, I built the client-side for a movie app called myFlix based on its existing server-side code (REST API and database) 
 which I built in the previous Achievement: https://github.com/Maya-Bitter/movie_api
 
-The API and database that I built meet the information needs of myFlix users. 
+The API and MongoDB database that I built meet the information needs of myFlix users. 
 Now, I created the interface they’ll use when making requests to—and receiving responses from—the server-side. 
 
 The client-side of this app will include several interface views 
@@ -64,35 +64,24 @@ Technical Requirements
 
 Project dependencies:
 
-"dependencies": {
+- "bootstrap: ^5.2.3,"
+- "moment": "^2.29.4",
+- "prop-types: ^15.8.1,"
+- "react: ^18.2.0,"
+- "react-bootstrap: ^2.7.2,"
+- "react-dom: ^18.2.0,"
+- "react-router: ^6.10.0,"
+- "react-router-dom: ^6.10.0"
 
-    "axios": "^1.4.0",
-    
-    "bootstrap": "^5.2.3",
-    
-    "moment": "^2.29.4",
-    
-    "prop-types": "^15.8.1",
-    
-    "react": "^18.2.0",
-    
-    "react-bootstrap": "^2.7.4",
-    
-    "react-dom": "^18.2.0",
-    
-    "react-router": "^6.10.0",
-    
-    "react-router-dom": "^6.10.0"
-  },
+dev dependencies:
+
+- "@parcel/transformer-sass": "^2.8.3"
+- "parcel": "^2.8.3"
+- "process": "^0.11.10"
   
-  "devDependencies": {
+
+
   
-    "@parcel/transformer-sass": "^2.8.3",
-    
-    "parcel": "^2.8.3",
-    
-    "process": "^0.11.10"
-  }
 
 
 
