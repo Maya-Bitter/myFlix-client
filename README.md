@@ -2,7 +2,7 @@
 
 App link: https://maya-flix.netlify.app/
 
-Project description & dependencies:
+## Project description & dependencies:
 
 Using React, I built the client-side for a movie app called myFlix based on its existing server-side code (REST API and database) 
 which I built in the previous Achievement: https://github.com/Maya-Bitter/movie_api
@@ -13,9 +13,9 @@ Now, I created the interface they’ll use when making requests to—and receivi
 The client-side of this app will include several interface views 
 (built using the React library) that will handle data through the (previously defined) REST API endpoints.
 
-Essential Views & Features:
+## Essential Views & Features:
 
-Main view
+### Main view
 
 ● Returns ALL movies to the user (each movie item with an image, title, and description)
 ● Filtering the list of movies with a “search” feature
@@ -23,20 +23,20 @@ Main view
 ● Ability to log out
 ● Ability to navigate to Profile view
 
-Page 2 - Single Movie view
+### Page 2 - Single Movie view
 
 ● Returns data (description, genre, director, image) about a single movie to the user
 ● Allows users to add a movie to their list of favorites
 
-Login view
+### Login view
 
 ● Allows users to log in with a username and password
 
-Signup view
+### Signup view
 
 ● Allows new users to register (username, password, email, date of birth)
 
-Profile view
+### Profile view
 
 ● Displays user registration details
 ● Allows users to update their info (username, password, email, date of birth)
@@ -44,7 +44,7 @@ Profile view
 ● Allows users to remove a movie from their list of favorites
 ● Allows existing users to deregister
 
-Technical Requirements
+### Technical Requirements
 
 ● The application must be a single-page application (SPA)
 
@@ -62,7 +62,7 @@ Technical Requirements
 
 ● The application may use React Redux for state management of at least one feature (i.e., filtering movies)
 
-Project dependencies:
+### Project dependencies:
 
 - "bootstrap: ^5.2.3,"
 - "moment": "^2.29.4",
@@ -73,7 +73,7 @@ Project dependencies:
 - "react-router: ^6.10.0,"
 - "react-router-dom: ^6.10.0"
 
-dev dependencies:
+### dev dependencies:
 
 - "@parcel/transformer-sass": "^2.8.3"
 - "parcel": "^2.8.3"
