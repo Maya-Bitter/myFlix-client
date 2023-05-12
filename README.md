@@ -26,7 +26,7 @@ The client-side of this app will include several interface views
 ### Page 2 - Single Movie view
 
 * Returns data (description, genre, director, image) about a single movie to the user
-*  Allows users to add a movie to their list of favorites
+* Allows users to add a movie to their list of favorites
 
 ### Login view
 
@@ -58,7 +58,7 @@ The client-side of this app will include several interface views
 
 * The application must contain function components
 
- The application must be hosted online
+* The application must be hosted online
 
 * The application may use React Redux for state management of at least one feature (i.e., filtering movies)
 
