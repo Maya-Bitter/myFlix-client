@@ -1,11 +1,11 @@
 # Achievement 3 Project: myFlix-client 
 
-App link [here](https://maya-flix.netlify.app/)
+App link [myFlix](https://maya-flix.netlify.app/)
  
 ## Project description & dependencies:
 
 Using React, I built the client-side for a movie app called myFlix based on its existing server-side code (REST API and database) 
-which I built in the previous Achievement [here](https://github.com/Maya-Bitter/movie_api) 
+which I built in the previous Achievement [movie_api](https://github.com/Maya-Bitter/movie_api) 
 
 The API and MongoDB database that I built meet the information needs of myFlix users. 
 Now, I created the interface they’ll use when making requests to—and receiving responses from—the server-side. 
