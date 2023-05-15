@@ -55,6 +55,7 @@ export const MainView = () => {
 
   const updateUser = (user) => {
     console.log("updateUser", user);
+    setUser(user);
     localStorage.setItem("user", JSON.stringify(user));
   };
 

@@ -31,9 +31,7 @@ export const MovieCard = ({ movie, user, updateUser }) => {
         if (user) {
           console.log("User", user);
           alert("Successfully added to favorites");
-          //setIsFavorite(true);
           updateUser(user);
-          window.location.reload();
         }
       })
       .catch((e) => {
@@ -61,9 +59,7 @@ export const MovieCard = ({ movie, user, updateUser }) => {
         if (user) {
           console.log("User", user);
           alert("Successfully removed from favorites");
-          //setIsFavorite(true);
           updateUser(user);
-          window.location.reload();
         }
       })
       .catch((e) => {
