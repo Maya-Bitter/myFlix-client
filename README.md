@@ -1,7 +1,17 @@
 # Achievement 3 Project: myFlix-client 
 
+### **Contents**
+
 App link [myFlix](https://maya-flix.netlify.app/)
- 
+
+[Project description & dependencies](#Project-description-&-dependencies)
+
+[Essential Views & Features](#Essential-Views-&-Features)
+
+[Technical Requirements](#Technical-Requirements)
+
+[Project & dev dependencies](#Project-dependencies)
+
 ## Project description & dependencies:
 
 Using React, I built the client-side for a movie app called myFlix based on its existing server-side code (REST API and database) 
@@ -12,6 +22,8 @@ Now, I created the interface they’ll use when making requests to—and receivi
 
 The client-side of this app will include several interface views 
 (built using the React library) that will handle data through the (previously defined) REST API endpoints.
+
+[go to start](#Contents)
 
 ## Essential Views & Features:
 
@@ -44,6 +56,9 @@ The client-side of this app will include several interface views
 * Allows users to remove a movie from their list of favorites
 * Allows existing users to deregister
 
+[go to start](#Contents)
+
+
 ### Technical Requirements
 
 * The application must be a single-page application (SPA)
@@ -61,6 +76,9 @@ The client-side of this app will include several interface views
 * The application must be hosted online
 
 * The application may use React Redux for state management of at least one feature (i.e., filtering movies)
+
+[go to start](#Contents)
+
 
 ### Project dependencies:
 
