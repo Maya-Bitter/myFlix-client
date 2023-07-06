@@ -2,7 +2,7 @@
 
 ### **Contents**
 
-App link [myFlix](https://maya-flix.netlify.app/)
+[App link myFlix](https://maya-flix.netlify.app/)
 
 [Project description & dependencies](#Project-description-&-dependencies)
 
